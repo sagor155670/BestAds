@@ -11,14 +11,21 @@
 		1CA471F72AE13B39009BD36E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA471F62AE13B39009BD36E /* ContentView.swift */; };
 		1CA471F92AE13B3B009BD36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA471F82AE13B3B009BD36E /* Assets.xcassets */; };
 		1CA471FC2AE13B3B009BD36E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA471FB2AE13B3B009BD36E /* Preview Assets.xcassets */; };
+		1CA472032AE13BA1009BD36E /* BannerAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA472022AE13BA1009BD36E /* BannerAdView.swift */; };
+		5E5E7CD615028D5C3336C78B /* Pods_BestAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD49A820BFFD46B7FE9C5610 /* Pods_BestAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1520471235DFF5D6E0A878DC /* Pods-BestAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestAds.release.xcconfig"; path = "Target Support Files/Pods-BestAds/Pods-BestAds.release.xcconfig"; sourceTree = "<group>"; };
 		1CA471F12AE13B39009BD36E /* BestAds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BestAds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA471F42AE13B39009BD36E /* BestAdsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestAdsApp.swift; sourceTree = "<group>"; };
 		1CA471F62AE13B39009BD36E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1CA471F82AE13B3B009BD36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CA471FB2AE13B3B009BD36E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CA472022AE13BA1009BD36E /* BannerAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerAdView.swift; sourceTree = "<group>"; };
+		1CA472042AE13D3B009BD36E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		82790DA6EBD4B4FA362D0949 /* Pods-BestAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BestAds.debug.xcconfig"; path = "Target Support Files/Pods-BestAds/Pods-BestAds.debug.xcconfig"; sourceTree = "<group>"; };
+		FD49A820BFFD46B7FE9C5610 /* Pods_BestAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BestAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5E7CD615028D5C3336C78B /* Pods_BestAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +45,8 @@
 			children = (
 				1CA471F32AE13B39009BD36E /* BestAds */,
 				1CA471F22AE13B39009BD36E /* Products */,
+				46FEC4F47B8DF802E04F878C /* Pods */,
+				8F07ACA33515FD4644675FB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +61,10 @@
 		1CA471F32AE13B39009BD36E /* BestAds */ = {
 			isa = PBXGroup;
 			children = (
+				1CA472042AE13D3B009BD36E /* Info.plist */,
 				1CA471F42AE13B39009BD36E /* BestAdsApp.swift */,
 				1CA471F62AE13B39009BD36E /* ContentView.swift */,
+				1CA472022AE13BA1009BD36E /* BannerAdView.swift */,
 				1CA471F82AE13B3B009BD36E /* Assets.xcassets */,
 				1CA471FA2AE13B3B009BD36E /* Preview Content */,
 			);
@@ -67,6 +79,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		46FEC4F47B8DF802E04F878C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82790DA6EBD4B4FA362D0949 /* Pods-BestAds.debug.xcconfig */,
+				1520471235DFF5D6E0A878DC /* Pods-BestAds.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F07ACA33515FD4644675FB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD49A820BFFD46B7FE9C5610 /* Pods_BestAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1CA471FF2AE13B3B009BD36E /* Build configuration list for PBXNativeTarget "BestAds" */;
 			buildPhases = (
+				6A494206E2B22AB0358BB852 /* [CP] Check Pods Manifest.lock */,
 				1CA471ED2AE13B39009BD36E /* Sources */,
 				1CA471EE2AE13B39009BD36E /* Frameworks */,
 				1CA471EF2AE13B39009BD36E /* Resources */,
+				17FBF06405BED242F51A3847 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,11 +163,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17FBF06405BED242F51A3847 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BestAds/Pods-BestAds-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BestAds/Pods-BestAds-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BestAds/Pods-BestAds-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A494206E2B22AB0358BB852 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BestAds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1CA471ED2AE13B39009BD36E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA472032AE13BA1009BD36E /* BannerAdView.swift in Sources */,
 				1CA471F72AE13B39009BD36E /* ContentView.swift in Sources */,
 				1CA471F52AE13B39009BD36E /* BestAdsApp.swift in Sources */,
 			);
@@ -195,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,6 +335,7 @@
 		};
 		1CA472002AE13B3B009BD36E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82790DA6EBD4B4FA362D0949 /* Pods-BestAds.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -270,6 +345,7 @@
 				DEVELOPMENT_TEAM = 53WK73J5M9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BestAds/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -290,6 +366,7 @@
 		};
 		1CA472012AE13B3B009BD36E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1520471235DFF5D6E0A878DC /* Pods-BestAds.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -299,6 +376,7 @@
 				DEVELOPMENT_TEAM = 53WK73J5M9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BestAds/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

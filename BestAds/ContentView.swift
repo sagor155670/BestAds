@@ -9,13 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Spacer()
+        Text("Adaptive Banner")
+         .font(.largeTitle)
+         .fontWeight(.heavy)
+        BannerAdView(adUnit: .mainView, adFormat: .adaptiveBanner)
+//        Text("Large Banner")
+//         .font(.largeTitle)
+//         .fontWeight(.heavy)
+//        BannerAdView(adUnit: .mainView, adFormat: .largeBanner)
+//        Text("Medium Rectangle")
+//         .font(.largeTitle)
+//         .fontWeight(.heavy)
+//        BannerAdView(adUnit: .mainView, adFormat: .mediumRectangle)
+//        Spacer()
     }
 }
 

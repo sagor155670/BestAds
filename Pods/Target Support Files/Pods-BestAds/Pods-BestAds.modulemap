@@ -1,0 +1,6 @@
+framework module Pods_BestAds {
+  umbrella header "Pods-BestAds-umbrella.h"
+
+  export *
+  module * { export * }
+}
